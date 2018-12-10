@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="">
+<html class="theme-next gemini use-motion" lang="">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1234567891011121314151617181920//当网络不可用时 //如果项目需要耗费的流量比较大，可以通过下面的方法判断，并提示用户if (Application.internetReachability== NetworkReachability.NotReachable)             &amp;#123;        //Do sth.&amp;#125;//当用户使用WiFi">
+<meta name="description" content="Unity 网络状态判断">
 <meta name="keywords" content="unity,网络">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Unity 网络状态判断">
 <meta property="og:url" content="http://yoursite.com/2018/10/11/TestPage/index.html">
 <meta property="og:site_name" content="Playwowo">
-<meta property="og:description" content="1234567891011121314151617181920//当网络不可用时 //如果项目需要耗费的流量比较大，可以通过下面的方法判断，并提示用户if (Application.internetReachability== NetworkReachability.NotReachable)             &amp;#123;        //Do sth.&amp;#125;//当用户使用WiFi">
+<meta property="og:description" content="Unity 网络状态判断">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-11T04:14:14.762Z">
+<meta property="og:updated_time" content="2018-12-10T03:19:56.688Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Unity 网络状态判断">
-<meta name="twitter:description" content="1234567891011121314151617181920//当网络不可用时 //如果项目需要耗费的流量比较大，可以通过下面的方法判断，并提示用户if (Application.internetReachability== NetworkReachability.NotReachable)             &amp;#123;        //Do sth.&amp;#125;//当用户使用WiFi">
+<meta name="twitter:description" content="Unity 网络状态判断">
 
 
 
@@ -98,7 +98,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -300,7 +300,8 @@
       
 
       
-        <figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//当网络不可用时 </span></span><br><span class="line"><span class="comment">//如果项目需要耗费的流量比较大，可以通过下面的方法判断，并提示用户</span></span><br><span class="line"><span class="keyword">if</span> <span class="comment">(Application.internetReachability== NetworkReachability.NotReachable)</span>             </span><br><span class="line">&#123; </span><br><span class="line">       <span class="comment">//Do sth.</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//当用户使用WiFi时  </span></span><br><span class="line"><span class="keyword">if</span><span class="comment">(Application.internetReachability==NetworkReachability.ReachableViaLocalAreaNetwork)</span>               </span><br><span class="line">&#123; </span><br><span class="line">     <span class="comment">//Do sth. </span></span><br><span class="line">&#125;                 </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//当用户使用移动网络时</span></span><br><span class="line"><span class="keyword">if</span><span class="comment">(Application.internetReachability==NetworkReachability.ReachableViaCarrierDataNetwork)</span>             </span><br><span class="line">&#123;</span><br><span class="line">      <span class="comment">//Do sth.               </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>Unity 网络状态判断<br><a id="more"></a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//当网络不可用时 </span><br><span class="line">//如果项目需要耗费的流量比较大，可以通过下面的方法判断，并提示用户</span><br><span class="line">if (Application.internetReachability== NetworkReachability.NotReachable)             </span><br><span class="line">&#123; </span><br><span class="line">       //Do sth.</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//当用户使用WiFi时  </span><br><span class="line">if(Application.internetReachability==NetworkReachability.ReachableViaLocalAreaNetwork)               </span><br><span class="line">&#123; </span><br><span class="line">     //Do sth. </span><br><span class="line">&#125;                 </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//当用户使用移动网络时</span><br><span class="line">if(Application.internetReachability==NetworkReachability.ReachableViaCarrierDataNetwork)             </span><br><span class="line">&#123;</span><br><span class="line">      //Do sth.               </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -336,7 +337,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/12/03/hello-world/" rel="prev" title="Unity3D脚本：更改脚本和类名，且不破坏现有脚本引用的方法">
+              <a href="/2018/12/10/hello-world/" rel="prev" title="Unity3D脚本：更改脚本和类名，且不破坏现有脚本引用的方法">
                 Unity3D脚本：更改脚本和类名，且不破坏现有脚本引用的方法 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -419,7 +420,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -474,7 +475,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -573,6 +574,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
